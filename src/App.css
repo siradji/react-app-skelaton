@@ -6,14 +6,29 @@
 body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: #ccc;
 }
 
 .app {
   position: relative;
 }
 
-.app .section {
+.section {
   position: absolute;
-  top: 50%;
+  top: 70%;
+  margin-top: 10em;
   left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(177, 177, 177);
+  padding: 4em 2em;
+}
+
+.section .small-text {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.heading {
+  font-size: 3em;
+  text-align: center;
 }

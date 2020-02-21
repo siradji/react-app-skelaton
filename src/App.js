@@ -5,7 +5,11 @@ class App extends Component {
     return (
       <div className='app'>
         <div className='section'>
-          <h1>React App Skelaton</h1>
+          <h1 className='heading'>React App Skelaton</h1>
+          <p className='small-text'>
+            A very powerful alternative to create react app
+          </p>
+          <span className='span'>Made With Love by Kraken</span>
         </div>
       </div>
     );
