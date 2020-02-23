@@ -1,12 +1,14 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  background-color: #ccc;
+  background-color: rgb(0, 0, 0);
+  color: #fff;
 }
 
 .app {
@@ -14,13 +16,7 @@ body {
 }
 
 .section {
-  position: absolute;
-  top: 70%;
-  margin-top: 10em;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgb(177, 177, 177);
-  padding: 4em 2em;
+  position: relative;
 }
 
 .section .small-text {
@@ -31,4 +27,5 @@ body {
 .heading {
   font-size: 3em;
   text-align: center;
+  margin-top: 2em;
 }

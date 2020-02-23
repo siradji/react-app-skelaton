@@ -7,7 +7,7 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "start": "webpack-dev-server --mode development --open --hot",
+    "start": "webpack-dev-server --mode development --port 3000 --open --hot",
     "build": "webpack --mode production"
   },
   "dependencies": {
