@@ -10,6 +10,7 @@
     "start": "webpack-dev-server --history-api-fallback --mode development  --open --hot",
     "build": "webpack --mode production",
     "lint": "eslint .",
+    "test": "jest",
     "format": "prettier --write \"**/*.+(js|jsx|json|yml|yaml|css|md|vue)\""
   },
   "dependencies": {
@@ -22,8 +23,12 @@
     "@babel/preset-env": "^7.8.4",
     "@babel/preset-react": "^7.8.3",
     "babel-eslint": "^10.1.0",
+    "babel-jest": "^25.1.0",
     "babel-loader": "^8.0.6",
     "css-loader": "^3.4.2",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "enzyme-to-json": "^3.4.4",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-prettier": "^6.10.0",
@@ -34,6 +39,8 @@
     "eslint-watch": "^6.0.1",
     "html-webpack-plugin": "^3.2.0",
     "husky": "^4.2.3",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^25.1.0",
     "lint-staged": "^10.0.8",
     "prettier": "^1.19.1",
     "style-loader": "^1.1.3",
@@ -44,6 +51,17 @@
   "husky": {
     "hooks": {
       "pre-commit": "npm run lint && npm run format"
+    }
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "<rootDir>src/setupTest.js"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "moduleNameMapper": {
+      "\\.(css|less|scss)$": "identity-obj-proxy"
     }
   }
 }
