@@ -11,10 +11,12 @@
     "build": "webpack --mode production",
     "lint": "eslint .",
     "test": "jest",
+    "deploy": "netlify deploy --dir=./build -p  -m \"${git log -l --pretty=%B}\"",
     "format": "prettier --write \"**/*.+(js|jsx|json|yml|yaml|css|md|vue)\""
   },
   "dependencies": {
     "@babel/polyfill": "^7.8.3",
+    "netlify-cli": "^2.40.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },
@@ -50,7 +52,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint && npm run format"
+      "pre-commit": "yarn format && yarn lint"
     }
   },
   "jest": {
