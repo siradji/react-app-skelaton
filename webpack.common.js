@@ -14,6 +14,11 @@ const rules = [
     exclude: /node_modules/,
     use: ['style-loader', 'css-loader'],
   },
+  {
+    test: /\.html$/,
+    exclude: /node_modules/,
+    use: 'html-loader',
+  },
 ]
 module.exports = {
   entry: path.join(__dirname, 'src', 'index.js'),
