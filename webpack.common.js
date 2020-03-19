@@ -33,4 +33,7 @@ module.exports = {
       hash: true,
     }),
   ],
+  stats: {
+    children: false,
+  },
 }
