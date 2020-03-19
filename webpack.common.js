@@ -16,10 +16,7 @@ const rules = [
   },
   {
     test: /\.html$/,
-    exclude: /node_modules/,
-    use: {
-      loader: 'html-loader',
-    },
+    loader: 'html-loader',
   },
 ]
 module.exports = {
@@ -32,6 +29,8 @@ module.exports = {
   plugins: [
     new HTMLwebplugin({
       template: path.join(__dirname, 'public', 'index.html'),
+      filename: 'index.html',
+      hash: true,
     }),
   ],
 }
