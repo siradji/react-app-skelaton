@@ -17,7 +17,9 @@ const rules = [
   {
     test: /\.html$/,
     exclude: /node_modules/,
-    use: 'html-loader',
+    use: {
+      loader: 'html-loader',
+    },
   },
 ]
 module.exports = {
