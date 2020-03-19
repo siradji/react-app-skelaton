@@ -24,7 +24,7 @@ module.exports = {
   module: { rules },
   plugins: [
     new HTMLwebplugin({
-      template: './public/index.html',
+      template: path.join(__dirname, 'public', 'index.html'),
     }),
   ],
 }

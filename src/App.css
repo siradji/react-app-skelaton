@@ -10,22 +10,3 @@ body {
   background-color: rgb(0, 0, 0);
   color: #fff;
 }
-
-.app {
-  position: relative;
-}
-
-.section {
-  position: relative;
-}
-
-.section .small-text {
-  text-align: center;
-  font-size: 1.5em;
-}
-
-.heading {
-  font-size: 3em;
-  text-align: center;
-  margin-top: 2em;
-}
