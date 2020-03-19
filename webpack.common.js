@@ -26,13 +26,7 @@ module.exports = {
     filename: 'index.js',
   },
   module: { rules },
-  plugins: [
-    new HTMLwebplugin({
-      template: path.join(__dirname, 'public', 'index.html'),
-      filename: 'index.html',
-      hash: true,
-    }),
-  ],
+  plugins: [new HTMLwebplugin()],
   stats: {
     children: false,
   },
