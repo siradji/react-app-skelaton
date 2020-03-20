@@ -12,15 +12,6 @@ exports[`match snapshot 1`] = `
     >
       React App Skelaton
     </h1>
-    <div
-      className="inner"
-    >
-      <p
-        className="small-text"
-      >
-        A very powerful alternative to create react app
-      </p>
-    </div>
   </div>
 </div>
 `;
