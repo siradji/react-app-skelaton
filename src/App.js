@@ -5,9 +5,9 @@ const App = () => (
   <div className="app">
     <div className="section">
       <h1 className="heading">React App Skelaton</h1>
-      <div className="inner">
+      {/* <div className="inner">
         <p className="small-text">A very powerful alternative to create react app</p>
-      </div>
+      </div> */}
     </div>
   </div>
 )
