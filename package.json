@@ -2,8 +2,17 @@
   "name": "react_boiler_plate",
   "version": "1.0.0",
   "description": "A Quick Alternative to CRA",
-  "main": "index.js",
+  "main": "src/index.js",
   "author": "Siradji Awoual",
+  "repository": {
+    "url": "https://github.com/kraken-coder/react-app-skelaton"
+  },
+  "keywords": [
+    "react",
+    "webpack",
+    "babel",
+    "boilerplate"
+  ],
   "license": "MIT",
   "private": false,
   "scripts": {
@@ -17,6 +26,7 @@
   "dependencies": {
     "@babel/polyfill": "^7.8.3",
     "dotenv-webpack": "^1.7.0",
+    "minimist": "^1.2.5",
     "netlify-cli": "^2.40.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
