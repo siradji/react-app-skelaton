@@ -27,7 +27,7 @@
     "@babel/polyfill": "^7.8.3",
     "dotenv-webpack": "^1.7.0",
     "minimist": "^1.2.5",
-    "netlify-cli": "^2.40.0",
+    "netlify-cli": "^2.59.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },
