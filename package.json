@@ -24,7 +24,7 @@
     "format": "prettier --write \"**/*.+(js|jsx|json|yml|yaml|css|md|vue)\""
   },
   "dependencies": {
-    "@babel/polyfill": "^7.8.3",
+    "@babel/polyfill": "^7.10.4",
     "dotenv-webpack": "^1.7.0",
     "minimist": "^1.2.5",
     "netlify-cli": "^2.40.0",
